@@ -4,7 +4,8 @@
 #ifndef M6502_H
 #define M6502_H
 
-enum core6502flags {
+enum core6502flags
+{
     CAR = 0b00000001,
     ZER = 0b00000010,
     INT = 0b00000100,
@@ -15,7 +16,8 @@ enum core6502flags {
     NEG = 0b10000000
 };
 
-typedef struct core6502 {
+typedef struct core6502
+{
     uint8_t a;
     uint8_t x;
     uint8_t y;
