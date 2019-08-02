@@ -49,27 +49,6 @@ void test_write_out(uint16_t addr, uint8_t val)
 {
     putchar((char)val);
 }
-/*
-=== Adressing Modes:
-Indirect, X
-Zero Page
-Immediate
-Absolute
-Indirect, Y
-Zero Page, X
-Absolute, Y
-Absolute, X
-
-=== Instructions:
-ORA
-AND
-EOR
-ADC
-STA
-LDA
-CMP
-    SBC
-*/
 
 #define CHECKFLAG(x, y) (assert(x->flag &y))
 #define CHECKVALUE(x, y) (assert(x == y))
